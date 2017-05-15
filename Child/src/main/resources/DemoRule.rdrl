@@ -1,0 +1,10 @@
+import java.lang.Number;
+
+rule "DemoRule"
+	dialect "mvel"
+	ruleflow-group "Group1"
+	when
+	then
+		kcontext.getKnowledgeRuntime().setGlobal("G_Var1","abcc");
+		System.out.println("Rule executed.. ");
+end
